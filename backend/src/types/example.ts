@@ -1,11 +1,13 @@
 //this is an example file to show how you would create typescript types for data
 
-// export interface dbDocument {
-//   _id?: ObjectEncodingOptions;
-//   name: string;
-//   description: string;
-//   extraDataHere?: couldBeAnything;
-// }
+import { ObjectId } from "mongodb";
+
+export interface dbDocument {
+  _id?: ObjectId;
+  name: string;
+  description: string;
+  extraDataHere?: string; //could be anything
+}
 
 // export interface serversideItem {
 //   id: string;
