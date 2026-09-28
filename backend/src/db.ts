@@ -22,6 +22,7 @@ export async function connectToDatabase(): Promise<Db> {
 }
 
 export function getIssuesCollection(): Collection<dbDocument> {
+  // Replace the collection name and document type when adapting this template.
   return db.collection<dbDocument>("issues");
 }
 
